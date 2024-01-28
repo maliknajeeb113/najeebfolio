@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Magilio";
+  src: url("./src/assets/fonts/MagilioRegular.ttf");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./src/assets/fonts/Satoshi-Variable.ttf");
+}
+
+.logo-green {
+  text-shadow: -3px 3px #000000;
+}
+
+.n-green {
+  text-shadow: -6px 6px #000000;
+}
+
+.footer-logo-green {
+  text-shadow: -3px 3px #000000;
+}
+
+@media (min-width: 768px) {
+  .n-green {
+    text-shadow: -9px 9px #000000;
+  }
+}
