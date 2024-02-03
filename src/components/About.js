@@ -7,9 +7,7 @@ const About = () => {
         <h1 className="text-6xl text-white font-Magilio ">Yes, This is Me</h1>
         <div className="flex pt-10 flex-col lg:flex-row w-full">
           {/* Work Experience */}
-          <div className="flex lg:w-2/5 items-center justify-center">
-            <img src={najeeb} className="h-96" alt="me" />
-          </div>
+          
           <div className="flex flex-col gap-7">
             <div className="font-Satoshi text-4xl text-yellow-500 ">
               Rubrik Inc.
@@ -23,6 +21,9 @@ const About = () => {
                 Web developer | Sept, 2023 - Dec, 2023
               </div>
             </div>
+          </div>
+          <div className="flex items-center justify-center absolute right-0">
+            <img src={najeeb} className="object-contain max-h-[700px]" alt="me" />
           </div>
         </div>
       </div>
