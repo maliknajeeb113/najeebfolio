@@ -25,9 +25,6 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center absolute right-0">
-            <img src={najeeb} className="object-contain max-h-[700px]" alt="me" />
-          </div>
         </div>
       </div>
     </div>
