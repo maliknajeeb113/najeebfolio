@@ -35,14 +35,12 @@ const Navbar = () => {
 
   return (
     <nav className="fixed bg-transparent">
-      <div
-        className="w-screen"
-      >
-        {/* <div
+
+        <div
         className={`${
           navColor ? "bg-[rgb(3,15,10)]" : "bg-white"
         }  w-screen `}
-      > */}
+      >
         <div className="p-6 px-10 container mx-auto ">
           <div className="flex justify-between items-center">
             {/* logo start */}
@@ -75,6 +73,7 @@ const Navbar = () => {
                         navColor ? "text-white" : "text-[rgb(3,15,10)]"
                       } font-Satoshi font-semibold hover:text-yellow-500`}
                     >
+                     
                       {link.name}
                     </Link>
                   </li>

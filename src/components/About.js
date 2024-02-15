@@ -24,7 +24,7 @@ const About = () => {
           </div>
         </div>
         <div className="flex items-center absolute right-0 object-contain">
-            <img src={najeeb} className="h-max object-contain" alt="me" />
+            <img src={najeeb} className="max-h-screen object-contain" alt="me" />
           </div>
       </div>
       <Marquee autoFill>
