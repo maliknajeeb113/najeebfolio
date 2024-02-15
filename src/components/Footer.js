@@ -1,5 +1,11 @@
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
+import instagram from "../assets/icons/instagram.svg"
+import gmail from "../assets/icons/gmail.svg"
+import github from "../assets/icons/github.svg"
+import linkedin from "../assets/icons/linkedin.svg"
+import twitter from "../assets/icons/twitter-x.svg"
+
 
 const Footer = () => {
   return (
@@ -36,7 +42,7 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center ">
-            {/* <ul
+            <ul
               className={`flex items-center justify-center gap-5 md:gap-10 flex-row left-0 right-0`}
             >
               <li className="flex items-center gap-x-2 p-1 font-medium">
@@ -70,8 +76,7 @@ const Footer = () => {
                   <img className="w-6 h-6" alt="Vector" src={twitter} />
                 </Link>
               </li>
-            </ul> */}
-            icons hai yaha pe
+            </ul>
           </div>
         </div>
       </div>
