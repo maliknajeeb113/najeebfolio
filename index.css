@@ -12,6 +12,10 @@
   src: url("./src/assets/fonts/Satoshi-Variable.ttf");
 }
 
+nav{
+  z-index: 1000!important;
+}
+
 .logo-green {
   text-shadow: -3px 3px #000000;
 }

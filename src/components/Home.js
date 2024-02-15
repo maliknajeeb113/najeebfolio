@@ -1,4 +1,4 @@
-import { ArrowDownCircleIcon } from "@heroicons/react/24/solid";
+import { IoArrowDownCircleOutline } from "react-icons/io5";
 
 import Marquee from "react-fast-marquee";
 
@@ -32,7 +32,7 @@ const Home = () => {
 
               {/* right items start*/}
               <div className="flex flex-col items-center lg:justify-end">
-                {/* <ArrowDownCircleIcon className="h-10 w-10 text-yellow-500 animate-bounce " /> */}
+                <IoArrowDownCircleOutline className="h-10 w-10 text-yellow-500 animate-bounce " />
 
                 <div className="font-Satoshi text-2xl">
                   <h1>SCROLL</h1>

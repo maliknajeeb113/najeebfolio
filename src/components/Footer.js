@@ -10,12 +10,6 @@ import twitter from "../assets/icons/twitter-x.svg"
 const Footer = () => {
   return (
     <footer className=" bg-[rgb(3,15,10)] lg:mx-auto">
-      <Marquee autoFill>
-        <div className="font-Satoshi text-white p-4 font-medium">
-          Job de do ;-;
-        </div>
-        <div className="font-Satoshi text-xl text-white p-2 font-bold">---</div>
-      </Marquee>
 
       <div className="container flex flex-col px-8 mx-auto text-white pt-8">
         <div className="text-2xl font-Satoshi font-bold">
