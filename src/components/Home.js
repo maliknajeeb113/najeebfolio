@@ -4,9 +4,9 @@ import Marquee from "react-fast-marquee";
 
 const Home = () => {
   return (
-    <main className="snap-y snap-mandatory max-h-screen">
+    <main className="snap-y snap-mandatory max-h-screen overflow-hidden">
       <section className=" snap-start">
-        <div className="min-h-screen bg-white overflow-x-hidden">
+        <div className="min-h-screen bg-white">
           <div className="container px-8 lg:mx-auto  flex flex-col h-screen pt-20 justify-between">
             {/* Hello text start*/}
             <h1 className="text-[5rem] lg:text-[12.5rem] font-Magilio text-[rgb(3,15,10)] text-right">
@@ -17,7 +17,7 @@ const Home = () => {
             {/* Hello text end*/}
 
             {/* Intro div start*/}
-            <div className="flex flex-col justify-between gap-28 lg:flex-row pb-16">
+            <div className="flex flex-col justify-between gap-20 lg:gap-28 lg:flex-row lg:pb-16">
               {/* left text start*/}
               <div className="font-Satoshi flex lg:w-3/5 text-4xl ">
                 <h1>
@@ -42,7 +42,7 @@ const Home = () => {
               {/* right items start*/}
             </div>
             {/* Intro div end*/}
-            <div className="-mx-96 bg-[rgb(3,15,10)] text-sm">
+            <div className="-mx-96 bg-[rgb(3,15,10)] text-sm justify-end">
               <Marquee autoFill>
                 <div className="font-Satoshi text-white p-4 font-medium">
                   Job de do ;-;

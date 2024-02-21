@@ -34,12 +34,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed bg-transparent">
-
-        <div
+    <nav className="absolute">
+      <div
         className={`${
           navColor ? "bg-[rgb(3,15,10)]" : "bg-white"
-        }  w-screen `}
+        }  fixed w-screen `}
       >
         <div className="p-6 px-10 container mx-auto ">
           <div className="flex justify-between items-center">
@@ -53,19 +52,25 @@ const Navbar = () => {
 
             <div className="lg:flex lg:items-center">
               <div className="lg:hidden" onClick={toggleNav}>
-                <Hamburger
+                <Hamburger toggled={isNavOpen}
                   size={22}
-                  color={`${navColor ? "white" : "black"}`}
+                  color={`${navColor ? "white" : "black"}`
+                
+
+                }
                 />
               </div>
 
               <ul
-                className={`${isNavOpen ? "flex" : "hidden"}  items-center p-10 lg:p-0 lg:flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-12 absolute lg:static left-0 right-0`}
+                className={`${isNavOpen ? "flex" : "hidden"} ${
+                  navColor ? "bg-[rgb(3,15,10)]" : "bg-white"
+                } items-center p-10 lg:p-0 lg:flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-12 absolute lg:static left-0 right-0`}
               >
                 {paths.map((link) => (
                   <li
                     className="flex items-center gap-x-2 p-1 font-medium"
                     onClick={toggleNav}
+                    
                   >
                     <Link
                       to={link.link}
@@ -73,7 +78,6 @@ const Navbar = () => {
                         navColor ? "text-white" : "text-[rgb(3,15,10)]"
                       } font-Satoshi font-semibold hover:text-yellow-500`}
                     >
-                     
                       {link.name}
                     </Link>
                   </li>
